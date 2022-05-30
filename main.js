@@ -36,22 +36,20 @@
 //         var color = prompt("type some color");
 //         // var number = +prompt("type some number");
 //     }
-//     document.write("<br>" +"<span>" + color + "</span>")
-
-
+//     document.write("<br>" +"<span>" + color + "</span>");
 // }
 // getInputFromUser();
 
 
 // 9.	צרו פונקציה המקבלת מהמשתמש טקסט ושם תגית ואז בונה את התגית עם הטקסט ב DOM.
 
-function getFromUserAndBuild(){
-var textFromUser = prompt("type some text");
-var nameTag = prompt("type random Tag name");
-
-
-}
-getFromUserAndBuild();
+// function getFromUserAndBuild(){
+// var textFromUser = prompt("type some text");
+// var nameTag = prompt("choose open tag <tag>");
+// var nameTag1 = prompt("choose close Tag </tag>");
+// document.write("<br>" + nameTag + textFromUser + nameTag1)
+// }
+// getFromUserAndBuild();
 
 
 
