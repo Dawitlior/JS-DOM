@@ -53,14 +53,25 @@
 
 
 
+// 10.	צרו פונקציה המקבלת מהמשתמש סוג קלט ויוצרת את הקלט המתאים ב DOM.
+// NOT FINISH
+
+// function creatTheCorrectInput(){
+// var user = prompt("write something");
+
+// }
+// creatTheCorrectInput();
 
 
 
 
+// 11.	צרו פונקציה המקבלת כארגומנט שם class וטקסט, הפונקציה משנה את התוכן של כל האלמנטים עם ה class שהתקבל לטקסט שהמשתמש הכניס.
+
+function someFunction(text,someClass){
 
 
-
-
+}
+someFunction();
 
 
 
