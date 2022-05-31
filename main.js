@@ -19,7 +19,7 @@
 // 7.	צרו פונקציה המקבלת מהמשתמש שם והדפיסו אותו למסך בתגית H2.
 // function funkyFunction(){
 // var userInput = prompt("type some name");
-// document.write("<h2>" + userInput + "</h2>");
+// document.body.innerHTML = "<h2>" + userInput + "</h2>";
 // }
 // funkyFunction();
 
@@ -29,11 +29,12 @@
 //     var userRoundPrompt = prompt("type a number");
 //     for(var i = 0 ; i <userRoundPrompt ; i++){
 //         var color = prompt("type some color");
-//         // var number = +prompt("type some number");
 //     }
-//     document.write("<br>" +"<span>" + color + "</span>");
+//     document.body.innerHTML = "<br>" + "<span>" + color + "</span>";
 // }
 // getInputFromUser();
+
+
 
 // 9.	צרו פונקציה המקבלת מהמשתמש טקסט ושם תגית ואז בונה את התגית עם הטקסט ב DOM.
 
@@ -41,17 +42,22 @@
 // var textFromUser = prompt("type some text");
 // var nameTag = prompt("choose open tag <tag>");
 // var nameTag1 = prompt("choose close Tag </tag>");
-// document.write("<br>" + nameTag + textFromUser + nameTag1)
+// document.body.innerHTML = "<br>" + nameTag + textFromUser + nameTag1;
 // }
 // getFromUserAndBuild();
 
+
+
 // 10.	צרו פונקציה המקבלת מהמשתמש סוג קלט ויוצרת את הקלט המתאים ב DOM.
 
-// function creatTheCorrectInput(){
-// var inputType = prompt("write something");
-// document.innerHTML = "<input type =" + inputType + "/>"
-// }
-// creatTheCorrectInput();
+function creatTheCorrectInput(){
+var inputType = prompt("write something");
+document.innerHTML = "<input type =" + inputType + "/>"
+}
+creatTheCorrectInput();
+
+
+
 
 // 11.	צרו פונקציה המקבלת כארגומנט שם class וטקסט, הפונקציה משנה את התוכן של כל האלמנטים עם ה class שהתקבל לטקסט שהמשתמש הכניס.
 
@@ -63,6 +69,9 @@
 // }
 // someFunction();
 
+
+
+
 // 12.	צרו 6 אלמנטי P ריקים ב html, צרו פונקציה שמכניסה להם אלמנט SPAN עם טקסט.
 
 // function someFunction(){
@@ -72,6 +81,13 @@
 // }
 // }
 // someFunction();
+
+
+
+
+
+
+
 
 // 14.	צרו פונקציה המייצרת אובייקט של סרט, עם שם, מספר צפיות, שנה ותמונה. תנו להם ערכים מהמשתמש, הדפיסו למסך את הסרטים בצורה יפה, כולל התמונה, שם - הכי גדול ושנה הכי קטן
 
@@ -95,6 +111,13 @@
 //     "</h6>";
 // }
 // functionOnMovie();
+
+
+
+
+
+
+
 
 // 15.	צרו אובייקט של עובד, בעזרת קלטים צרו שדות של שם פרטי, שם משפחה, אימייל ומחלקה. ותנו להם ערכים מהמשתמש, הדפיסו את האובייקט למסך, כל ערך באלמנט משלו.
 
@@ -121,37 +144,51 @@
 //   employees.department +
 //   "</h3>";
 
+
+
+
+
+
+
+
+
 // 16.	צרו פונקציה הקולטת מספר מהמשתמש ומייצרת מספר אובייקטים, על פי הקלט, של בניין, לכל בניין יש שם קבלן, שם חברה, מספר קומות ומספר דירות בקומה. תנו להם ערכים מהמשתמש, הדפיסו כל אובייקט למסך, כל אובייקט באלמנט משלו.
 
-function creatSomeObjectAndPrint() {
-  var userNumber = prompt("type a number");
-  for (var i = 0; i < userNumber; i++) {
-    var building = {};
-    building.boss = prompt("type the name of the boss");
-    building.company = prompt("type name of company");
-    building.severalFloors = prompt("type the Several floors");
-    building.numberOfApartments = prompt(
-      "type the number of the apartmant in every floor"
-    );
-  }
-  document.body.innerHTML =
-    "<h2>" +
-    building.boss +
-    "</h2>" +
-    " " +
-    "<h3>" +
-    building.company +
-    "</h3>" +
-    "" +
-    "<h4>" +
-    building.severalFloors +
-    "</h4>" +
-    "" +
-    "<h5>" +
-    building.numberOfApartments +
-    "</h5>";
-}
-creatSomeObjectAndPrint();
+// function creatSomeObjectAndPrint() {
+//   var userNumber = prompt("type a number");
+//   for (var i = 0; i < userNumber; i++) {
+//     var building = {};
+//     building.boss = prompt("type the name of the boss");
+//     building.company = prompt("type name of company");
+//     building.severalFloors = prompt("type the Several floors");
+//     building.numberOfApartments = prompt(
+//       "type the number of the apartmant in every floor"
+//     );
+//   }
+//   document.body.innerHTML =
+//     "<h2>" +
+//     building.boss +
+//     "</h2>" +
+//     " " +
+//     "<h3>" +
+//     building.company +
+//     "</h3>" +
+//     "" +
+//     "<h4>" +
+//     building.severalFloors +
+//     "</h4>" +
+//     "" +
+//     "<h5>" +
+//     building.numberOfApartments +
+//     "</h5>";
+// }
+// creatSomeObjectAndPrint();
+
+
+
+
+
+
 
 // 17.	צרו פונקציה הקולטת מספר מהמשתמש ומייצרת מספר אובייקטים, על פי הקלט, של חנות, לכל חנות יש שם החנות, כתובת, מספר מחלקות ומספר עובדים. תנו להם ערכים מהמשתמש, הדפיסו רק למסך רק חנוית עם מספר עובדים גבוה מ 10, כל אובייקט באלמנט משלו.
 
