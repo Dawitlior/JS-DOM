@@ -112,7 +112,7 @@
 //   "<h6>" +
 //   employees.lastname +
 //   "</h6>" +
-  
+
 //   "<span>" +
 //   employees.email +
 //   "</span>" +
@@ -121,28 +121,58 @@
 //   employees.department +
 //   "</h3>";
 
-
 // 16.	צרו פונקציה הקולטת מספר מהמשתמש ומייצרת מספר אובייקטים, על פי הקלט, של בניין, לכל בניין יש שם קבלן, שם חברה, מספר קומות ומספר דירות בקומה. תנו להם ערכים מהמשתמש, הדפיסו כל אובייקט למסך, כל אובייקט באלמנט משלו.
 
+function creatSomeObjectAndPrint() {
+  var userNumber = prompt("type a number");
+  for (var i = 0; i < userNumber; i++) {
+    var building = {};
+    building.boss = prompt("type the name of the boss");
+    building.company = prompt("type name of company");
+    building.severalFloors = prompt("type the Several floors");
+    building.numberOfApartments = prompt(
+      "type the number of the apartmant in every floor"
+    );
+  }
+  document.body.innerHTML =
+    "<h2>" +
+    building.boss +
+    "</h2>" +
+    " " +
+    "<h3>" +
+    building.company +
+    "</h3>" +
+    "" +
+    "<h4>" +
+    building.severalFloors +
+    "</h4>" +
+    "" +
+    "<h5>" +
+    building.numberOfApartments +
+    "</h5>";
+}
+creatSomeObjectAndPrint();
 
-// function creatSomeObjectAndPrint(){
-// var userNumber = prompt("type a number");
-// for(var i = 0 ; i<userNumber ; i++){
-//     var building = {};
-//     building.boss = prompt("type the name of the boss");
-//     building.company = prompt("type name of company");
-//     building.severalFloors = prompt("type the Several floors");
-//     building.numberOfApartments = prompt("type the number of the apartmant in every floor");
+// 17.	צרו פונקציה הקולטת מספר מהמשתמש ומייצרת מספר אובייקטים, על פי הקלט, של חנות, לכל חנות יש שם החנות, כתובת, מספר מחלקות ומספר עובדים. תנו להם ערכים מהמשתמש, הדפיסו רק למסך רק חנוית עם מספר עובדים גבוה מ 10, כל אובייקט באלמנט משלו.
 
+// function printTheObjects() {
+//   var userNumber = prompt("type some random number");
+//   for (var i = 0; i < userNumber; i++) {
+//     var store = {};
+//     store.name = prompt("type the name of the store");
+//     store.adress = prompt("type the adress of the store");
+//     store.numberDepartments = prompt("type how departments they have");
+//     store.workers = prompt("How many employees do they have");
+//     if (store.workers > 10) {
+//       document.body.innerHTML +=
+//         "<h6>" + store.name + "</h6>" + " " + "<h3>" + store.workers + "</h3>";
+//     }
+//   }
 // }
+// printTheObjects();
 
-// document.body.innerHTML = "<h2>" + building.boss + "</h2>" + " " + "<h3>" + building.company + "</h3>" + "" + "<h4>" + building.severalFloors + "</h4>" + "" + "<h5>" + building.numberOfApartments + "</h5>" ;
+// 18.	צרו פונקציה שמדפיסה ללוג כמה אלמנטים נוצרו במסך בפונקציה הקודמת (סעיף 17).
 
-// }
-// creatSomeObjectAndPrint();
-
-
-// 17.	צרו פונקציה הקולטת מספר מהמשתמש ומייצרת מספר אובייקטים, על פי הקלט, של חנות, לכל חנות יש שם החנות, כתובת, מספר מחלקות ומספר עובדים. תנו להם ערכים מהמשתמש, הדפיסו רק למסך רק חנוית עם מספר עובדים גבוה מ 10, כל אובייקט באלמנט משלו. 
 
 
 
